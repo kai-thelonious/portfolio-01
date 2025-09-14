@@ -12,26 +12,16 @@ body {
     font-weight: 800;
     font-style: normal;
     letter-spacing: 0.08em;
+    color: rgb(174, 37, 37);
     /*background-image: url("background.svg"); /* background-color: rgb(174, 37, 37); */
     /* background-attachment: fixed; */
-    background-color: rgb(174, 37, 37);
+    background-color: rgba(0, 0, 0, 0.95);
     position: relative;
     height: max-content;
 
 }
 
-body::before {
-    content: ''; /* Required for pseudo-elements to display */
-    position: absolute; /* Positions it relative to the container */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('background.svg');
-    background-size: cover;
-    opacity: 0.1; /* This changes the transparency of the background image */
-    z-index: -1; /* Puts the background image behind the content */
-}
+
 
 
 
@@ -101,7 +91,7 @@ body::before {
     display: flex;
     justify-content: center;
 
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
     box-sizing: border-box;
 
@@ -242,12 +232,13 @@ body::before {
 
 
     .divider-2 {
-        margin: 100px;
+        margin: 80px;
     }
 
 
     .footer-contact {
         padding: 30px;
+
 
         ul {
             list-style: none;
@@ -263,7 +254,6 @@ body::before {
              }
             li:hover {
                 transform: scale(1.5);
-                color: #FCD612;
             }
         }
 
