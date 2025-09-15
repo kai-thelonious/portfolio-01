@@ -5,7 +5,7 @@ let ctrlIcon = document.getElementById("ctrlIcon");
 // Use an event listener for the button click
 ctrlIcon.addEventListener("click", playPause);
 
-song.onloadedmetadata = function() {
+song.onloadedmetadata = function () {
     progress.max = song.duration;
     progress.value = song.currentTime;
 }
@@ -30,7 +30,7 @@ song.addEventListener('play', () => {
 });
 
 // Update song time when the user drags the slider
-progress.onchange = function() {
+progress.onchange = function () {
     song.currentTime = progress.value;
     song.play(); // Play the song after changing the time
     ctrlIcon.classList.add("fa-pause");
